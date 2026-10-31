@@ -3,6 +3,8 @@
 The TV's browser for the Project Zomboid mod **Smart TVs!** on the Steam Workshop.
 The game's Workshop allows no programs in mods, so this part comes as its own download.
 
+**Windows only for now.** Linux and macOS are planned.
+
 ## Install
 
 1. Download **SmartTVsHelper.zip** from the [latest release](https://github.com/eneden/SmartTVs/releases/latest) and extract the whole zip.
