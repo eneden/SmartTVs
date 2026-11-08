@@ -2,7 +2,7 @@
 
 The TV's browser for the Project Zomboid mod **Smart TVs!** on the Steam Workshop.
 The game's Workshop allows no programs in mods, so on Windows this part comes as its own download.
-On Linux and macOS there is nothing to download: the mod uses the browser you already have.
+On Linux and macOS there is no helper: the mod uses a Chromium-based browser on your computer (Chrome, Chromium, Edge or Brave), which you install yourself if you have none.
 
 The mod itself is on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3831834885).
 
@@ -30,13 +30,25 @@ Quit the game and delete the folder `%LOCALAPPDATA%\LiveChannels`. It also holds
 
 ## Linux and macOS
 
-No helper, no download. The game starts a Chromium-based browser that is already on your computer, **Google Chrome, Chromium, Microsoft Edge or Brave** (in that order of preference), in the background, without a window and with a profile of its own, so your own browser's logins and tabs are never touched. The TV shows its pages and plays their sound.
+No helper to download. The game starts a Chromium-based browser from your computer, **Google Chrome, Chromium, Microsoft Edge or Brave** (in that order of preference), in the background, without a window and with a profile of its own, so your own browser's logins and tabs are never touched. The TV shows its pages and plays their sound.
 
-- **Nothing found?** The TV says it needs a browser. Install one of the four and restart the game. Version 112 or newer is needed.
+- **Nothing found?** The TV says it needs a browser. Install one (see *Getting a browser* below) and restart the game. Version 112 or newer is needed.
 - **Typing.** Click into the page and your keyboard goes to the TV: the character does not walk while you type. Escape, or a click into the game, gives the keyboard back.
 - **Copy-protected video** (Netflix and the like, DRM) cannot play on Linux and macOS. The TV shows a notice instead of the page.
 - **Sound.** The TV's volume bar sets the volume of the page's video and audio. A page that makes sound only through Web Audio (some games) ignores it.
 - **macOS** is new and has had less testing than the others. Please report what does not work in the mod's Discord.
+
+### Getting a browser
+
+macOS and most Linux systems do not come with a Chromium-based browser: macOS has Safari, and Ubuntu, Linux Mint and (usually) the Steam Deck's desktop mode have Firefox, which will not do. If you have none of the four, install one first. The easiest:
+
+- **Google Chrome**, for macOS and for Linux (`.deb` or `.rpm`): <https://www.google.com/chrome/>. On Linux it is the simplest choice: Google's own package, with no snap or Flatpak in between. On a Mac with Homebrew: `brew install --cask google-chrome`.
+- **Microsoft Edge**, for macOS and Linux (`.deb` or `.rpm`): <https://www.microsoft.com/edge>.
+- **Brave**: <https://brave.com/download/> for macOS, <https://brave.com/linux/> for Linux (with the commands for apt and dnf).
+- **Chromium** on Linux: Debian `sudo apt install chromium`, Fedora `sudo dnf install chromium`, Arch `sudo pacman -S chromium`. On Ubuntu `chromium-browser` installs a snap, which has not been tested with the TV: take Chrome there.
+- **Steam Deck:** in Desktop Mode open Discover, search for Google Chrome (or Brave) and install it. That is a Flatpak browser, which the TV tries but which has not been tested on a real Deck.
+
+Restart the game after installing one.
 
 ### Where things are
 
